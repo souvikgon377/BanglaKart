@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+:root {
+  --background: #faf9f6; /* Warm Ivory background */
+  --foreground: #1c1917; /* Charcoal foreground */
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+.dark {
+  --background: #0d0d0d;          /* Dark rich charcoal */
+  --foreground: #f5f5f4;          /* Warm off-white */
+}
+
+.light {
+  --background: #faf9f6;
+  --foreground: #1c1917;
+}
+
+@theme {
+  /* Culturally inspired BanglaKart palette */
+  --color-primary: #006a4e;         /* Deep Forest Green */
+  --color-primary-hover: #00543e;
+  --color-primary-light: #e6f6f2;
+  
+  --color-accent: #f42a41;          /* Crimson Red */
+  --color-accent-hover: #d62035;
+  --color-accent-light: #feebee;
+  
+  --color-gold: #d4af37;            /* Jute Gold */
+  --color-gold-hover: #b5922d;
+  --color-gold-light: #faf5e6;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  
+  --font-sans: var(--font-geist-sans), sans-serif;
+  --font-mono: var(--font-geist-mono), monospace;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), sans-serif;
+  overflow-x: hidden;
+}
+
+/* Premium Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(120, 113, 108, 0.25);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(120, 113, 108, 0.45);
+}

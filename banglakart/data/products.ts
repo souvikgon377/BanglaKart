@@ -1,0 +1,130 @@
+export interface Product {
+  id: string;
+  name: string;
+  banglaName: string;
+  description: string;
+  banglaDescription: string;
+  price: number; // in BDT (৳)
+  category: "apparel" | "food" | "crafts" | "home";
+  rating: number;
+  reviewsCount: number;
+  origin: string;
+  banglaOrigin: string;
+  story: string;
+  banglaStory: string;
+  inStock: boolean;
+  imageSvg: string; // inline custom SVG illustration
+}
+
+export const CATEGORIES = [
+  { id: "all", name: "All Products", banglaName: "সব পণ্য" },
+  { id: "apparel", name: "Heritage Apparel", banglaName: "ঐতিহ্যবাহী পোশাক" },
+  { id: "food", name: "Organic Delicacies", banglaName: "অর্গানিক খাবার" },
+  { id: "crafts", name: "Handicrafts & Art", banglaName: "হস্তশিল্প ও কারুশিল্প" },
+  { id: "home", name: "Home & Living", banglaName: "গৃহসজ্জা" },
+];
+
+export const PRODUCTS: Product[] = [
+  {
+    id: "prod-1",
+    name: "Premium Dhakai Jamdani Saree",
+    banglaName: "প্রিমিয়াম ঢাকাই জামদানি শাড়ি",
+    description: "Authentic, hand-loomed Jamdani saree featuring intricate floral and geometric motifs. Woven with fine cotton and gold zari threads.",
+    banglaDescription: "খাঁটি হাতে বোনা জামদানি শাড়ি, যাতে রয়েছে সূক্ষ্ম ফুলের ও জ্যামিতিক নকশা। সুতি এবং সোনালী জরি সুতা দিয়ে বোনা।",
+    price: 18500,
+    category: "apparel",
+    rating: 4.9,
+    reviewsCount: 38,
+    origin: "Narayanganj",
+    banglaOrigin: "নারায়ণগঞ্জ",
+    story: "Woven using the ancient loom-weaving technique recognized as a UNESCO Intangible Cultural Heritage. Each saree takes 2-4 weeks of painstaking handcrafting by master weavers.",
+    banglaStory: "ইউনেস্কো সাংস্কৃতিক ঐতিহ্য হিসেবে স্বীকৃত প্রাচীন তাঁত বুনন পদ্ধতিতে তৈরি। প্রতিটি শাড়ি তৈরিতে ২-৪ সপ্তাহ সময় লাগে।",
+    inStock: true,
+    imageSvg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" class="w-full h-full"><rect width="100%" height="100%" fill="url(#bg-jamdani)"/><defs><linearGradient id="bg-jamdani" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#4a0404"/><stop offset="100%" stop-color="#1a0000"/></linearGradient></defs><g opacity="0.3" stroke="#d4af37" stroke-width="1.5" fill="none"><path d="M 0 50 L 400 50 M 0 100 L 400 100 M 0 150 L 400 150 M 0 200 L 400 200 M 0 250 L 400 250 M 0 300 L 400 300 M 0 350 L 400 350 M 0 400 L 400 400 M 0 450 L 400 450"/><path d="M 50 0 L 50 500 M 100 0 L 100 500 M 150 0 L 150 500 M 200 0 L 200 500 M 250 0 L 250 500 M 300 0 L 300 500 M 350 0 L 350 500"/></g><path d="M 200 120 L 250 200 L 200 280 L 150 200 Z" fill="none" stroke="#d4af37" stroke-width="3"/><circle cx="200" cy="200" r="15" fill="#f42a41"/><path d="M 120 200 Q 200 250 280 200 Q 200 150 120 200" fill="none" stroke="#d4af37" stroke-width="2"/><circle cx="150" cy="200" r="6" fill="#d4af37"/><circle cx="250" cy="200" r="6" fill="#d4af37"/><text x="50%" y="85%" text-anchor="middle" fill="#d4af37" font-family="serif" font-size="20" letter-spacing="4">JAMDANI HERITAGE</text></svg>`,
+  },
+  {
+    id: "prod-2",
+    name: "Pure Rajshahi Silk Saree",
+    banglaName: "খাঁটি রাজশাহী সিল্ক শাড়ি",
+    description: "Lightweight and incredibly soft saree crafted from 100% natural Mulberry silk. Hand-painted with traditional floral designs.",
+    banglaDescription: "১০০% প্রাকৃতিক তুত রেশম (Mulberry silk) থেকে তৈরি অত্যন্ত হালকা এবং নরম শাড়ি। ঐতিহ্যবাহী আলপনা ও ফুলের নকশা হাতে আঁকা।",
+    price: 12000,
+    category: "apparel",
+    rating: 4.8,
+    reviewsCount: 29,
+    origin: "Rajshahi",
+    banglaOrigin: "রাজশাহী",
+    story: "Rajshahi Silk is famous worldwide for its premium quality silk threads extracted from silkworms. It represents a century-old heritage of the northern region of Bangladesh.",
+    banglaStory: "রাজশাহী সিল্ক গুটিপোকা থেকে সংগৃহীত সুতার উন্নত মানের জন্য বিশ্বখ্যাত। এটি বাংলাদেশের উত্তরাঞ্চলের শতাব্দী প্রাচীন ঐতিহ্যের প্রতীক।",
+    inStock: true,
+    imageSvg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" class="w-full h-full"><rect width="100%" height="100%" fill="url(#bg-silk)"/><defs><linearGradient id="bg-silk" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#003322"/><stop offset="100%" stop-color="#001a11"/></linearGradient></defs><g stroke="#006a4e" stroke-width="2" fill="none" opacity="0.4"><path d="M 0 100 C 100 150, 300 50, 400 100 M 0 200 C 100 250, 300 150, 400 200 M 0 300 C 100 350, 300 250, 400 300 M 0 400 C 100 450, 300 350, 400 400"/></g><path d="M 100 250 Q 200 100 300 250 T 200 400 Z" fill="none" stroke="#d4af37" stroke-width="2.5"/><circle cx="200" cy="250" r="40" fill="none" stroke="#d4af37" stroke-dasharray="5,5" stroke-width="2"/><circle cx="200" cy="250" r="10" fill="#d4af37"/><text x="50%" y="85%" text-anchor="middle" fill="#d4af37" font-family="serif" font-size="20" letter-spacing="4">RAJSHAHI SILK</text></svg>`,
+  },
+  {
+    id: "prod-3",
+    name: "Organic Sundarban Honey",
+    banglaName: "সুন্দরবনের খাঁটি মধু",
+    description: "100% raw, unpasteurized honey wild-harvested from the deep mangrove forests of the Sundarbans. Strong floral aroma and rich golden color.",
+    banglaDescription: "সুন্দরবনের গভীর ম্যানগ্রোভ বন থেকে সংগৃহীত ১০০% প্রাকৃতিক ও খাঁটি মধু। তীব্র ফুলের সুবাস এবং চমৎকার সোনালী রঙের।",
+    price: 950,
+    category: "food",
+    rating: 4.7,
+    reviewsCount: 84,
+    origin: "Sundarbans",
+    banglaOrigin: "সুন্দরবন",
+    story: "Harvested by the 'Mawals' (traditional honey collectors) who risk their lives venturing into the tiger-inhabited mangrove forests during the spring flowering season.",
+    banglaStory: "বসন্তকালে বাঘের অভয়ারণ্য সুন্দরবনে জীবন ঝুঁকি নিয়ে ঐতিহ্যবাহী মধু সংগ্রহকারী 'মওয়াল'দের দ্বারা সংগৃহীত।",
+    inStock: true,
+    imageSvg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" class="w-full h-full"><rect width="100%" height="100%" fill="url(#bg-honey)"/><defs><linearGradient id="bg-honey" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#fff5e6"/><stop offset="100%" stop-color="#ffe3b3"/></linearGradient></defs><g fill="none" stroke="#d4af37" stroke-width="1.5"><polygon points="200,150 230,132 230,98 200,80 170,98 170,132" opacity="0.3"/><polygon points="235,210 265,192 265,158 235,140 205,158 205,192" opacity="0.5" fill="#d4af37"/><polygon points="165,210 195,192 195,158 165,140 135,158 135,192" opacity="0.3"/><polygon points="200,270 230,252 230,218 200,200 170,218 170,252" opacity="0.6" fill="#006a4e"/></g><path d="M 170 240 Q 200 380 230 240 Z" fill="#e69500" opacity="0.9"/><path d="M 160 220 L 240 220 L 220 330 L 180 330 Z" fill="none" stroke="#5c3a00" stroke-width="4"/><line x1="160" y1="240" x2="240" y2="240" stroke="#5c3a00" stroke-width="3"/><path d="M 170 180 C 170 150 230 150 230 180" fill="none" stroke="#5c3a00" stroke-width="4"/><text x="50%" y="85%" text-anchor="middle" fill="#5c3a00" font-family="sans-serif" font-weight="bold" font-size="18" letter-spacing="2">WILD MANGROVE</text></svg>`,
+  },
+  {
+    id: "prod-4",
+    name: "Premium Sreemangal Black Tea",
+    banglaName: "শ্রীমঙ্গলের প্রিমিয়াম চা পাতা",
+    description: "Finest hand-plucked Orthodox black tea from the lush green hills of Sreemangal. Rich, full-bodied flavor with a subtle malty finish.",
+    banglaDescription: "শ্রীমঙ্গলের সবুজ পাহাড় থেকে সংগৃহীত হাতে বাছাই করা প্রিমিয়াম ব্ল্যাক টি। চমৎকার কড়া স্বাদ ও সুগন্ধযুক্ত।",
+    price: 450,
+    category: "food",
+    rating: 4.6,
+    reviewsCount: 112,
+    origin: "Sreemangal, Sylhet",
+    banglaOrigin: "শ্রীমঙ্গল, সিলেট",
+    story: "Sreemangal is known as the 'Tea Capital' of Bangladesh. This tea is sourced from rain-fed estates that produce some of the finest single-origin black teas in South Asia.",
+    banglaStory: "শ্রীমঙ্গলকে বাংলাদেশের চায়ের রাজধানী বলা হয়। এই চা পাতা সিলেট অঞ্চলের শতাব্দী প্রাচীন চা বাগান থেকে সরাসরি সংগৃহীত।",
+    inStock: true,
+    imageSvg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" class="w-full h-full"><rect width="100%" height="100%" fill="url(#bg-tea)"/><defs><linearGradient id="bg-tea" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#f0f7f4"/><stop offset="100%" stop-color="#d8ebd4"/></linearGradient></defs><g stroke="#006a4e" stroke-width="3" fill="none"><path d="M 130 250 C 130 180, 270 180, 270 250 C 270 320, 130 320, 130 250 Z" fill="#006a4e" opacity="0.1"/><path d="M 150 250 Q 200 210 250 250 Q 200 290 150 250" fill="#006a4e"/><path d="M 200 210 L 200 290 M 175 230 L 225 270 M 225 230 L 175 270" stroke="#fff" stroke-width="1.5"/><path d="M 200 130 Q 180 150 200 170 Q 220 150 200 130 Z" fill="#d4af37"/></g><path d="M 120 340 Q 200 370 280 340" fill="none" stroke="#006a4e" stroke-width="4" stroke-linecap="round"/><text x="50%" y="85%" text-anchor="middle" fill="#006a4e" font-family="sans-serif" font-weight="bold" font-size="18" letter-spacing="2">SYLHET HARVEST</text></svg>`,
+  },
+  {
+    id: "prod-5",
+    name: "Hand-Stitched Jessore Nakshi Kantha",
+    banglaName: "হাতে সেলাই করা নকশী কাঁথা",
+    description: "Beautifully embroidered traditional quilt featuring intricate storytelling patterns, stitched on premium layers of soft organic cotton.",
+    banglaDescription: "নরম সুতি কাপড়ের স্তর দিয়ে তৈরি এবং গ্রামীণ লোকগাথার অনন্য নকশায় সুনিপুণভাবে হাতে সেলাই করা ঐতিহ্যবাহী নকশী কাঁথা।",
+    price: 6800,
+    category: "crafts",
+    rating: 4.9,
+    reviewsCount: 15,
+    origin: "Jessore",
+    banglaOrigin: "যশোর",
+    story: "Nakshi Kantha is a traditional textile art where rural women stitch stories of their lives, dreams, and local folklore onto fabric using colorful threads.",
+    banglaStory: "নকশী কাঁথা একটি লোকশিল্প, যেখানে গ্রামীণ নারীরা রঙিন সুতা দিয়ে কাপড়ে তাদের জীবনের গল্প, স্বপ্ন ও লোকগাথা ফুটিয়ে তোলেন।",
+    inStock: true,
+    imageSvg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" class="w-full h-full"><rect width="100%" height="100%" fill="#fff9f5"/><g stroke="#f42a41" stroke-width="1" stroke-dasharray="4,4" fill="none"><rect x="20" y="20" width="360" height="460" stroke-width="2"/><rect x="40" y="40" width="320" height="420"/></g><circle cx="200" cy="250" r="80" fill="none" stroke="#006a4e" stroke-width="2.5" stroke-dasharray="6,4"/><path d="M 200 180 Q 250 250 200 320 Q 150 250 200 180" fill="none" stroke="#d4af37" stroke-width="2" stroke-dasharray="3,3"/><path d="M 140 250 Q 200 300 260 250 Q 200 200 140 250" fill="none" stroke="#d4af37" stroke-width="2" stroke-dasharray="3,3"/><circle cx="200" cy="250" r="10" fill="#f42a41"/><text x="50%" y="88%" text-anchor="middle" fill="#f42a41" font-family="serif" font-size="18" letter-spacing="3">NAKSHI KANTHA</text></svg>`,
+  },
+  {
+    id: "prod-6",
+    name: "Handcrafted Rayer Bazar Clay Tea Set",
+    banglaName: "মাটির তৈরি ঐতিহ্যবাহী চা সেট",
+    description: "An elegant terracotta pottery tea set containing a teapot and six traditional cups, finished with organic clay glaze.",
+    banglaDescription: "একটি চমৎকার পোড়ামাটির তৈরি চা সেট যাতে রয়েছে ১টি কেতলি এবং ৬টি কাপ। সম্পূর্ণ প্রাকৃতিক উপায়ে তৈরি ও পরিবেশবান্ধব।",
+    price: 1850,
+    category: "home",
+    rating: 4.5,
+    reviewsCount: 22,
+    origin: "Rayer Bazar, Dhaka",
+    banglaOrigin: "রায়ের বাজার, ঢাকা",
+    story: "Rayer Bazar is historical for its potters (Kumbhakar community) who have preserved the traditional art of Bengali terracotta pottery for generations.",
+    banglaStory: "রায়ের বাজার মৃৎশিল্পীদের (কুমার সম্প্রদায়) জন্য ঐতিহাসিকভাবে বিখ্যাত, যারা প্রজন্মের পর প্রজন্ম ধরে বাঙালি পোড়ামাটির ঐতিহ্যবাহী শিল্পকে টিকিয়ে রেখেছেন।",
+    inStock: true,
+    imageSvg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" class="w-full h-full"><rect width="100%" height="100%" fill="url(#bg-clay)"/><defs><linearGradient id="bg-clay" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#fdf5f0"/><stop offset="100%" stop-color="#f6dfd3"/></linearGradient></defs><path d="M 150 280 C 130 180, 270 180, 250 280 Z" fill="#bf5e34"/><rect x="180" y="160" width="40" height="20" rx="5" fill="#a04d27"/><path d="M 150 220 Q 110 200 110 240 Q 110 270 150 250" fill="none" stroke="#bf5e34" stroke-width="8"/><path d="M 245 220 Q 290 200 285 240 Q 280 270 250 260" fill="none" stroke="#bf5e34" stroke-width="8"/><ellipse cx="200" cy="285" rx="55" ry="12" fill="#843c1c"/><text x="50%" y="85%" text-anchor="middle" fill="#843c1c" font-family="sans-serif" font-weight="bold" font-size="18" letter-spacing="2">BENGAL TERRACOTTA</text></svg>`,
+  },
+];
