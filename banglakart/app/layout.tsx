@@ -26,8 +26,12 @@ const themeInitScript = `
 `;
 
 export const metadata: Metadata = {
-  title: "BanglaKart - Authentic Bangladeshi Heritage Store",
-  description: "Shop premium handloomed Jamdani, Rajshahi Silk, organic Sundarban Honey, Sylhet Tea, and traditional Nakshi Kantha crafts.",
+  title: "BanglaKart - Authentic Bengali Heritage Store",
+  description: "Shop premium handloomed Jamdani, Murshidabad Silk, organic Sundarban Honey, Darjeeling Tea, and traditional Nakshi Kantha crafts.",
+  icons: {
+    icon: "/icon.svg",
+    apple: "/icon.svg",
+  },
 };
 
 export default function RootLayout({

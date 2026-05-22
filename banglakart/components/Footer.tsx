@@ -37,8 +37,8 @@ export default function Footer() {
             </div>
             <p className="text-sm text-stone-400 leading-relaxed">
               {t(
-                "Connecting global hearts with authentic Bangladeshi heritage. Sourced directly from local weavers, potters, mawals, and artisans.",
-                "বিশ্বের কাছে পৌঁছে দিচ্ছি বাংলাদেশের খাঁটি ঐতিহ্য। সরাসরি আমাদের তাঁতি, কুমোর, মওয়াল ও কারিগরদের কাছ থেকে সংগৃহীত।"
+                "Connecting global hearts with authentic Bengali heritage. Sourced directly from local weavers, potters, honey collectors, and artisans.",
+                "বিশ্বের কাছে পৌঁছে দিচ্ছি বাংলার খাঁটি ঐতিহ্য। সরাসরি আমাদের তাঁতি, কুমোর, মধু সংগ্রাহক ও কারিগরদের কাছ থেকে সংগৃহীত।"
               )}
             </p>
             <div className="flex gap-4 mt-2">
@@ -154,7 +154,7 @@ export default function Footer() {
         {/* Divider & Bottom Section */}
         <div className="mt-16 pt-8 border-t border-stone-800 flex flex-col md:flex-row items-center justify-between gap-6">
           <p className="text-xs text-stone-500">
-            © {new Date().getFullYear()} BanglaKart. {t("All rights reserved.", "সর্বস্বত্ব সংরক্ষিত।")} Built with pride in Bangladesh.
+            © {new Date().getFullYear()} BanglaKart. {t("All rights reserved.", "সর্বস্বত্ব সংরক্ষিত।")} Built with pride in West Bengal.
           </p>
 
           {/* Local Payment Badges */}

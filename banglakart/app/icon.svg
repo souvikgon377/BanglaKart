@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Background Circle (Saffron) -->
+  <circle cx="16" cy="16" r="16" fill="#FF9933"/>
+  <!-- Inner Circle (White) -->
+  <circle cx="16" cy="16" r="12" fill="#FFFFFF"/>
+  <!-- Green Element (representing progress/land) -->
+  <path d="M16 4 C22.627 4 28 9.373 28 16 C28 22.627 22.627 28 16 28 L4 28 L4 16 C4 9.373 9.373 4 16 4 Z" fill="#138808" opacity="0.1"/>
+  <!-- Stylized 'B' or Cart icon -->
+  <g transform="translate(8, 8) scale(0.66)">
+    <path d="M4 4h2l2 10h10l2-8H6" stroke="#138808" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <circle cx="9" cy="17" r="1.5" fill="#138808"/>
+    <circle cx="17" cy="17" r="1.5" fill="#138808"/>
+    <!-- Ashoka Chakra inspired detail in center -->
+    <circle cx="12" cy="9" r="3" stroke="#000080" stroke-width="0.5" fill="none"/>
+    <path d="M12 6v6M9 9h6M10 7l4 4M10 11l4-4" stroke="#000080" stroke-width="0.3"/>
+  </g>
+</svg>

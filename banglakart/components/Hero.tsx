@@ -42,8 +42,8 @@ export default function Hero({ onExploreClick }: HeroProps) {
             {/* Description */}
             <p className="max-w-xl text-base md:text-lg text-stone-600 dark:text-stone-400 leading-relaxed font-sans">
               {t(
-                "From the magical threads of Dhakai Jamdani to the deep forest honey of Sundarbans. Discover handcrafted treasures, organic delicacies, and legacy apparel of Bangladesh.",
-                "ঢাকাই জামদানির বুনন থেকে সুন্দরবনের খাঁটি বন্য মধু। সরাসরি আমাদের হস্তশিল্পী ও কৃষকদের দ্বারা তৈরিকৃত খাঁটি বাংলাদেশী পণ্যের সমাহার।"
+                "From the magical threads of Bengal Jamdani to the deep forest honey of Sundarbans. Discover handcrafted treasures, organic delicacies, and legacy apparel of West Bengal.",
+                "বেঙ্গল জামদানির বুনন থেকে সুন্দরবনের খাঁটি বন্য মধু। সরাসরি আমাদের হস্তশিল্পী ও কৃষকদের দ্বারা তৈরিকৃত খাঁটি বাংলার পণ্যের সমাহার।"
               )}
             </p>
 
@@ -92,7 +92,7 @@ export default function Hero({ onExploreClick }: HeroProps) {
               
               {/* Heritage Showcase Card Mock */}
               <div className="relative h-full w-full rounded-2xl bg-stone-950 overflow-hidden flex flex-col justify-end p-6 border border-stone-800 shadow-inner">
-                {/* Traditional motif representation (Dhakai Jamdani pattern overlay) */}
+                {/* Traditional motif representation (Bengal Jamdani pattern overlay) */}
                 <div className="absolute inset-0 opacity-15 pointer-events-none">
                   <svg className="w-full h-full" fill="none" stroke="#d4af37" strokeWidth="1.5">
                     <pattern id="motif-pattern" width="40" height="40" patternUnits="userSpaceOnUse">
@@ -111,7 +111,7 @@ export default function Hero({ onExploreClick }: HeroProps) {
                     {t("Preserving 1000 years of handloom legacy", "হাজার বছরের প্রাচীন তাঁতশিল্প সংরক্ষণ")}
                   </h3>
                   <p className="text-xs text-stone-400">
-                    Narayanganj, Bangladesh
+                    West Bengal, India
                   </p>
                 </div>
               </div>

@@ -18,16 +18,16 @@
 }
 
 @theme {
-  /* Culturally inspired BanglaKart palette */
-  --color-primary: #006a4e;         /* Deep Forest Green */
-  --color-primary-hover: #00543e;
-  --color-primary-light: #e6f6f2;
+  /* Culturally inspired BengalKart palette */
+  --color-primary: #138808;         /* Indian Green */
+  --color-primary-hover: #0e6606;
+  --color-primary-light: #f0f7f0;
   
-  --color-accent: #f42a41;          /* Crimson Red */
-  --color-accent-hover: #d62035;
-  --color-accent-light: #feebee;
+  --color-accent: #FF9933;          /* Saffron */
+  --color-accent-hover: #e68a2e;
+  --color-accent-light: #fff5eb;
   
-  --color-gold: #d4af37;            /* Jute Gold */
+  --color-gold: #d4af37;            /* Heritage Gold */
   --color-gold-hover: #b5922d;
   --color-gold-light: #faf5e6;
 

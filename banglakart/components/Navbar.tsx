@@ -33,9 +33,9 @@ export default function Navbar({
           {/* Logo Section */}
           <div className="flex items-center gap-2 cursor-pointer" onClick={() => onCategorySelect("all")}>
             <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-white shadow-md shadow-primary/20 transition-transform duration-300 hover:scale-105">
-              {/* Bangladeshi rising sun / kart icon */}
+              {/* Bengal heritage icon */}
               <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                <circle cx="12" cy="12" r="6" fill="#f42a41" />
+                <circle cx="12" cy="12" r="6" fill="#FF9933" />
                 <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM17 18c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zM7.2 14.63c0-.04.01-.07.03-.12L8.1 13h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7.2l.03-.04z" />
               </svg>
             </div>

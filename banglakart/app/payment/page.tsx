@@ -73,7 +73,7 @@ export default function PaymentPage() {
         amount: order.amount,
         currency: order.currency,
         name: "BanglaKart",
-        description: "Authentic Bangladeshi heritage products",
+        description: "Authentic Bengali heritage products",
         order_id: order.id,
         prefill: {
           name: "",
@@ -81,7 +81,7 @@ export default function PaymentPage() {
           contact: "",
         },
         theme: {
-          color: "#006a4e",
+          color: "#FF9933",
         },
         handler: (response: RazorpayResponse) => {
           clearCart();
